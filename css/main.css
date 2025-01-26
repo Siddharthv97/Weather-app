@@ -1,0 +1,138 @@
+@import url(./reset.css);
+
+/* Location Style  */
+.location_container{
+    margin-top: 10px;
+    height: 32px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #locationIcon{
+        height: 100%;
+
+        svg{
+            width: 18px;
+            height: 100%;
+            vertical-align: middle;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    #locationBox{
+        text-align: center;
+        height: 100%;
+        width: 80%;
+        font-size: 1.6rem;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    #locationBtn{
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        svg{
+            width: 18px;
+            height: 100%;
+            vertical-align: middle;
+            color: #fff;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+/* Time Style  */
+
+.time_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    #day{
+        text-transform: uppercase;
+    }
+
+    hr{
+        height: 6px;
+        width: 1px;
+        transform: rotate(90deg);
+        background-color: #fff;
+    }
+}
+
+/* Weather Images style  */
+#weather_img{
+    width: 90%;
+    height: auto;
+    /* border: 1px solid #fff; */
+    margin-top: 50px;
+    
+    img{
+        /* border: 1px solid #fff; */
+        width: 100%;
+        transform: scale(1.5);
+        object-fit: cover;
+        object-position: center;
+
+    }
+}
+
+/* Temperature Container  */
+#temp_container{
+    text-align: center;
+
+    .temp_number{
+        font-size: 3.6rem;
+    }
+}
+
+/* Temperature Cards  */
+#temp_info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid #fff; */
+    row-gap: 14px;
+    height: auto;
+    
+
+    .cards{
+        width: 50%;
+        height: 6rem;
+        border: 1px solid #fff;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex: 1 0 50%;
+
+        .card_img{
+            height: 40px;
+
+            img{
+                /* width: 100%; */
+                height: 100%;
+            }
+        }
+
+        .card_content{
+
+            .card_title{
+                font-size: 1.6rem;
+                color: #fff;
+                opacity: 0.8;
+            }
+        }
+    }
+}

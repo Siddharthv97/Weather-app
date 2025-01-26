@@ -1,0 +1,58 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sunflower:wght@300&display=swap');
+
+/* Root  */
+
+/* :root{
+    
+} */
+
+/* Universal Selectors  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tags Selectors  */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F6F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    width: 350px;
+    height: 90vh;
+    border: 1px solid #fff;
+    margin: auto;
+    border-radius: 25px;
+    padding: 16px;
+    background-color: #f6f5f50a;
+    backdrop-filter: blur(5px);
+}
+
+.space16{
+    height: 16px;
+}
+
+.space32{
+    height: 32px;
+}

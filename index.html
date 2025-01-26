@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="location_container">
+            <label for="locationBox" id="locationIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </label>
+            <input type="text" placeholder="Bhilai" id="locationBox">
+            <button id="locationBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <div class="space16"></div>
+        <div class="address"></div>
+        <div class="space16"></div>
+        <div class="time_container">
+            <h5 id="day">Sunday</h5>
+            <hr>
+            <h5 id="date">09/02/1997</h5>
+            <hr>
+            <h5 id="time">01:40:00 AM</h5>
+        </div>
+        <div class="space16"></div>
+        <div id="weather_img">
+            <img src="./assets/img/sunny-day.webp" alt="">
+        </div>
+        <div class="space32"></div>
+        <div id="temp_container">
+            <h1 class="temp_number">42<span> °</span> <span>C</span></h1>
+        </div>
+        <div id="temp_info">
+            <div class="cards">
+                <div class="card_img">
+                    <img src="./assets/icon/realfeel.png" alt="">
+                </div>
+                <div class="card_content">
+                    <h3 class="card_title">Real Feel</h3>
+                    <h4 class="card_info">0</h4>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card_img">
+                    <img src="./assets/icon/wind.png" alt="">
+                </div>
+                <div class="card_content">
+                    <h3 class="card_title">Wind</h3>
+                    <h4 class="card_info">0</h4>
+            </div>
+            <div class="cards">
+                <div class="card_img">
+                    <img src="./assets/icon/humidity.png" alt="">
+                </div>
+                <div class="card_content">
+                    <h3 class="card_title">Humidity</h3>
+                    <h4 class="card_info">0</h4>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card_img">
+                    <img src="./assets/icon/pressure.png" alt="">
+                </div>
+                <div class="card_content">
+                    <h3 class="card_title">
+                        Pressure</h3>
+                    <h4 class="card_info">0</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
